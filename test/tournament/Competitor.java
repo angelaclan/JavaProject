@@ -2,7 +2,7 @@ package test.tournament;
 
 public class Competitor {
 	
-	public int countPoints() {
+	public int getPoints() {
 		return 0;
 	}
 

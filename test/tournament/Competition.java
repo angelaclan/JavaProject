@@ -2,7 +2,7 @@ package test.tournament;
 
 import java.util.ArrayList;
 
-abstract public class Competition {
+public abstract class Competition {
 // Attribute
 	
 	final Match match = new Match();

@@ -3,6 +3,8 @@ import java.util.ArrayList;
 
 
 public class Tournemant extends Competition {
+	
+	
 
 	public Competitor play (ArrayList <Competitor> competitors) {
 		ArrayList<Competitor> winners = new ArrayList<Competitor>();
