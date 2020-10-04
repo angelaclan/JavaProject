@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public abstract class Competition {
+abstract public class Competition {
 // Attribute
 
 	protected Match match;
