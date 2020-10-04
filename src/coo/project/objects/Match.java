@@ -1,40 +1,10 @@
 package coo.project.objects;
-
+// match resolution strategy, how to
 public abstract class Match {
 	
-//	Attribute
-	protected Competitor one;
-	protected Competitor two;
-	protected boolean hasBeenPlayed = false;
 
-// Constructor
+//	Methods
 	
-	public Match(Competitor c1, Competitor c2) {
-		one = c1;
-		two = c2;
-	}
-	public Match() {
-	}
+	abstract protected Competitor play(Competitor c1, Competitor c2);
 
-
-	//	Methods
-	public abstract Competitor theWinnerIs();
-	
-	public abstract void play();
-
-	public abstract boolean hasBeenPlayed();
-	
-	
-	public Competitor getOne() {
-		return one;
-	}
-	public void setOne(Competitor one) {
-		this.one = one;
-	}
-	public Competitor getTwo() {
-		return two;
-	}
-	public void setTwo(Competitor two) {
-		this.two = two;
-	}
 }

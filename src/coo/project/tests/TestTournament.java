@@ -1,51 +1,52 @@
 package coo.project.tests;
 
+import java.util.ArrayList;
+
 import org.junit.Assert;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import coo.project.objects.CertainWinnerMatch;
 import coo.project.objects.Competition;
 import coo.project.objects.Competitor;
 import coo.project.objects.Tournament;
 
 class TestTournament {
 	
-	Competition tournament;
+	Competition tournament2020;
 	Competitor a;
 	Competitor b;
 	Competitor c;
-	Competitor d;
-	Competitor winner;
-	RandomWinnerMatch random;
+	Competitor d;	
+	
 	@BeforeEach
 	void setUp() throws Exception {
-		tournament = new Tournament(random);
+		
+		tournament2020 = new Tournament(new CertainWinnerMatch() );
+		
 		a = new Competitor();
 		b = new Competitor();
 		c = new Competitor();
 		d = new Competitor();
-
-		tournament.addCompetitor(a);
-		tournament.addCompetitor(b);
-		tournament.addCompetitor(c);
-		tournament.addCompetitor(d);
-
-		winner = tournament.play();
+		tournament2020.addCompetitor(a);
+		tournament2020.addCompetitor(b);
+		tournament2020.addCompetitor(c);
+		tournament2020.addCompetitor(d);
+		tournament2020.play();
+		
 		
 	}
 
-	@AfterEach
-	void tearDown() throws Exception {
-	}
 
 	@Test
-	void testWinnerIsCompetitor() {
-		Assert.assertTrue(tournament.competitors.size() == 4);
-		
-		
-		
-		
+	void testTheWinnerHas2Points() {
+		Assert.assertTrue(a.getPoint() == 2);		
 	}
-
+	
+	@Test
+	void testTheWinnerIsA () {
+		Competitor top = tournament2020.ranking().get(0);
+		Assert.assertSame(top, a);		
+	}
 }

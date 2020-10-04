@@ -5,34 +5,37 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import coo.project.objects.CertainWinnerMatch;
 import coo.project.objects.Competition;
 import coo.project.objects.Competitor;
+import coo.project.objects.League;
+import coo.project.objects.RandomWinnerMatch;
 
 public class TestLeague {
 
-	Competition league;
+	Competition league2019;
 	Competitor a;
 	Competitor b;
+	Competitor c;
+	Competitor winner;
 	
 	@Before
 	public void setUp() throws Exception {
-		league = new League();
+		league2019 = new League(new CertainWinnerMatch());
 		a = new Competitor();
 		b = new Competitor();
-		
-		league.addCompetitor(a);
-		league.addCompetitor(b);
-		
-		winner = league.play();
-	}
-
-	@After
-	public void tearDown() throws Exception {
+		c = new Competitor();
+		league2019.addCompetitor(a);
+		league2019.addCompetitor(b);
+		league2019.addCompetitor(c);
+		league2019.play();
 	}
 
 	@Test
-	public void test() {
-		Assert.assertTrue(winner instanceof Competitor);
+	public void testEachCompetitorHas2Points() {
+		Assert.assertTrue(a.getPoint() == 2);
+		Assert.assertTrue(b.getPoint() == 2);
+		Assert.assertTrue(c.getPoint() == 2);
 	}
 
 }
