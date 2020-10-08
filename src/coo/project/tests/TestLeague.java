@@ -17,7 +17,6 @@ public class TestLeague {
 	Competitor a;
 	Competitor b;
 	Competitor c;
-	Competitor winner;
 	
 	@Before
 	public void setUp() throws Exception {

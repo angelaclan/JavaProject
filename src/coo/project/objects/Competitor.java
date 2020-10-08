@@ -1,18 +1,18 @@
 package coo.project.objects;
 
 public class Competitor {
-	
+
 //Attribute
-	
+
 	private String name;
 	private Integer point = 0;
-	
+
 // Methods
-	
+
 	public void addPoints(int pt) {
 		this.point = point + pt;
 	}
-	
+
 	public String getName() {
 		return name;
 	}
@@ -28,6 +28,10 @@ public class Competitor {
 	public void setPoint(Integer point) {
 		this.point = point;
 	}
-	
-	
+
+	@Override
+	public String toString() {
+
+		return name + ":" + point.toString();
+	}
 }

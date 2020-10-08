@@ -14,7 +14,7 @@ public class League extends Competition {
 // Methods
 	
 	@Override
-	public Competitor play(ArrayList<Competitor> competitors) {
+	protected Competitor play(ArrayList<Competitor> competitors) {
 		
 		for(int i = 0; i < competitors.size(); i = i + 1) {
 			for(int j = 0; j < competitors.size(); j = j + 1) {
