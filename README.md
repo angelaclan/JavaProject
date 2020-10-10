@@ -6,7 +6,7 @@
 ##Obtain code
      From a terminal type: 
 
-     git clone git@gitlab-etu.fil.univ-lille1.fr:bragagnoloc/coo_project.git
+     $ git clone git@gitlab-etu.fil.univ-lille1.fr:bragagnoloc/coo_project.git
 
 #Obtain Maven
      This project is managed by Maven.
@@ -18,7 +18,7 @@
      Step into the project folder Ensure that the file *pom.xml* is in this location.
      execute the following line
      
-    $ mvn install 
+     $ mvn install 
     
      Maven will download the required libraries for Junit 5.6.2 testing. As well is going to execute the tests (4 in total).
      Our project is also configured to produce a jar and a javadoc. Within the project folder we are going to find the target folder.
