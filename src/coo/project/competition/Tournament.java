@@ -4,7 +4,12 @@ import java.util.ArrayList;
 import coo.project.core.Competition;
 import coo.project.core.Competitor;
 import coo.project.core.Match;
-
+/**
+ * 
+ * @author Chia-Ling Bragagnolo
+ * 
+ * Tournament resolve its winner by eliminating players in each round of match.
+ */
 
 public class Tournament extends Competition {
 

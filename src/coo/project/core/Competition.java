@@ -1,8 +1,6 @@
 package coo.project.core;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 
 abstract public class Competition {
 // Attribute
@@ -19,16 +17,30 @@ abstract public class Competition {
 
 // Methods
 
+	/**
+	 * 
+	 * @param a
+	 * adds the given competitor to the competition
+	 */
 	public void addCompetitor(Competitor a) {
 		competitors.add(a);
 	}
-
-	// template method
+	
+	/**
+	 * 
+	 * @return the winner of the competition
+	 * template method that relies on play(competitors) defined by sub-classes
+	 * 
+	 */
 	public Competitor play() {
 		hasBeenPlayed = true;
 		return this.play(competitors);
 	}
-
+	/**
+	 * 
+	 * @return a list of competitors ordered by their gained points
+	 * 
+	 */
 	public ArrayList<Competitor> ranking() {
 
 		ArrayList<Competitor> competitorsSorted = null;

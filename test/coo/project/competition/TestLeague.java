@@ -1,16 +1,19 @@
 package coo.project.competition;
 
-import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import coo.project.competition.League;
 import coo.project.core.Competition;
 import coo.project.core.Competitor;
 import coo.project.match.CertainWinnerMatch;
-import coo.project.match.RandomWinnerMatch;
-
+/**
+ * 
+ * @author Chia-Ling Bragagnolo
+ * Tests that each competitor accumulates certain amount of points after playing the matches.
+ * In this test case we create a special class : CertainWinnerMatch() for test purpose which the result can be predicted.
+ *  
+ */
 public class TestLeague {
 
 	Competition league2019;

@@ -1,6 +1,13 @@
 package coo.project.core;
-
 import coo.project.build.CompetitionBuilder;
+
+/**
+ * 
+ * @author Chia-Ling Bragagnolo
+ * 
+ * Program example
+ *
+ */
 
 public class MainCompetition {
 	public static void main(String[] args) {

@@ -1,17 +1,20 @@
 package coo.project.competition;
 
-import java.util.ArrayList;
-
 import org.junit.Assert;
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import coo.project.competition.Tournament;
 import coo.project.core.Competition;
 import coo.project.core.Competitor;
 import coo.project.match.CertainWinnerMatch;
-
+/**
+ * 
+ * @author Chia-Ling Bragagnolo
+ * Tests that in a tournament competition, it eventually generates a winner after playing all the matches,
+ * who also obtains points that equals to the rounds he has won.
+ * In this test case we create a special class : CertainWinnerMatch() for test purpose which the result can be predicted.
+ *  
+ */
 class TestTournament {
 	
 	Competition tournament2020;

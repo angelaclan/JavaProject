@@ -5,10 +5,13 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import coo.project.core.Competitor;
-import coo.project.core.Match;
-import coo.project.match.CertainWinnerMatch;
-import coo.project.match.RandomWinnerMatch;
-
+/**
+ * 
+ * @author Chia-Ling Bragagnolo
+ * Tests that competitor can track his points after winning some matches, the points of each competitor is equal to the rounds they have won.
+ * In this test case we create a special class : CertainWinnerMatch() for test purpose which the result can be predicted.
+ *  
+ */
 class TestCompetitorTrackPoints {
 	CertainWinnerMatch match1 ;
 	CertainWinnerMatch match2 ;

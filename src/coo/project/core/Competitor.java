@@ -8,11 +8,18 @@ public class Competitor {
 	private Integer point = 0;
 
 // Methods
-
+	/**
+	 * 
+	 * @param add points to the winner of a match
+	 */
 	public void addPoints(int pt) {
 		this.point = point + pt;
 	}
 
+	/**
+	 * 
+	 * @return the name of a competitor
+	 */
 	public String getName() {
 		return name;
 	}
@@ -21,12 +28,12 @@ public class Competitor {
 		this.name = name;
 	}
 
+	/**
+	 * 
+	 * @return the points of a competitor
+	 */
 	public Integer getPoint() {
 		return point;
-	}
-
-	public void setPoint(Integer point) {
-		this.point = point;
 	}
 
 	@Override
