@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"coo.project.build"},{"l":"coo.project.competition"},{"l":"coo.project.core"},{"l":"coo.project.match"}]
