@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.4" icons="true" automaticImage="GIF" always-add-relationships="false" generalizations="true" 
   realizations="true" associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="coo.project.objects.Competition" project="SportsCompetition" 
-    file="/SportsCompetition/src/coo/project/objects/Competition.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="1" language="java" name="coo.project.core.Competition" project="SportsCompetition" 
+    file="/SportsCompetition/src/coo/project/core/Competition.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="203" width="254" x="191" y="47"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -10,8 +10,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="coo.project.objects.match.RandomWinnerMatch" project="SportsCompetition" 
-    file="/SportsCompetition/src/coo/project/objects/match/RandomWinnerMatch.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="2" language="java" name="coo.project.match.RandomWinnerMatch" project="SportsCompetition" 
+    file="/SportsCompetition/src/coo/project/match/RandomWinnerMatch.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="126" width="253" x="664" y="412"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -19,8 +19,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="coo.project.objects.competition.Tournament" project="SportsCompetition" 
-    file="/SportsCompetition/src/coo/project/objects/competition/Tournament.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="3" language="java" name="coo.project.competition.Tournament" project="SportsCompetition" 
+    file="/SportsCompetition/src/coo/project/competition/Tournament.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="142" width="225" x="63" y="352"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -28,8 +28,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="coo.project.objects.competition.League" project="SportsCompetition" 
-    file="/SportsCompetition/src/coo/project/objects/competition/League.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="4" language="java" name="coo.project.competition.League" project="SportsCompetition" 
+    file="/SportsCompetition/src/coo/project/competition/League.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="138" width="238" x="353" y="353"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -37,8 +37,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="5" language="java" name="coo.project.objects.Match" project="SportsCompetition" 
-    file="/SportsCompetition/src/coo/project/objects/Match.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="5" language="java" name="coo.project.core.Match" project="SportsCompetition" 
+    file="/SportsCompetition/src/coo/project/core/Match.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="130" width="244" x="666" y="204"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -46,8 +46,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="6" language="java" name="coo.project.objects.Competitor" project="SportsCompetition" 
-    file="/SportsCompetition/src/coo/project/objects/Competitor.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="6" language="java" name="coo.project.core.Competitor" project="SportsCompetition" 
+    file="/SportsCompetition/src/coo/project/core/Competitor.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="249" width="204" x="1000" y="60"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      

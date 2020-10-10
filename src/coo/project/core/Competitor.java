@@ -1,4 +1,4 @@
-package coo.project.objects;
+package coo.project.core;
 
 public class Competitor {
 

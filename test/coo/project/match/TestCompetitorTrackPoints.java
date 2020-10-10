@@ -1,13 +1,13 @@
-package coo.project.objects;
+package coo.project.match;
 
 import org.junit.Assert;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import coo.project.objects.Competitor;
-import coo.project.objects.Match;
-import coo.project.objects.match.CertainWinnerMatch;
-import coo.project.objects.match.RandomWinnerMatch;
+import coo.project.core.Competitor;
+import coo.project.core.Match;
+import coo.project.match.CertainWinnerMatch;
+import coo.project.match.RandomWinnerMatch;
 
 class TestCompetitorTrackPoints {
 	CertainWinnerMatch match1 ;

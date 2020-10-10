@@ -1,15 +1,15 @@
-package coo.project.objects;
+package coo.project.competition;
 
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import coo.project.objects.Competition;
-import coo.project.objects.Competitor;
-import coo.project.objects.competition.League;
-import coo.project.objects.match.CertainWinnerMatch;
-import coo.project.objects.match.RandomWinnerMatch;
+import coo.project.competition.League;
+import coo.project.core.Competition;
+import coo.project.core.Competitor;
+import coo.project.match.CertainWinnerMatch;
+import coo.project.match.RandomWinnerMatch;
 
 public class TestLeague {
 

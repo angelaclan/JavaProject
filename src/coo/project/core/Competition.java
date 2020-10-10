@@ -1,4 +1,4 @@
-package coo.project.objects;
+package coo.project.core;
 
 import java.util.ArrayList;
 import java.util.Collections;

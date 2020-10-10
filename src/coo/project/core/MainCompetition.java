@@ -1,6 +1,6 @@
-package coo.project.objects;
+package coo.project.core;
 
-import coo.project.objects.build.CompetitionBuilder;
+import coo.project.build.CompetitionBuilder;
 
 public class MainCompetition {
 	public static void main(String[] args) {

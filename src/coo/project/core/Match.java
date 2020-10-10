@@ -1,4 +1,4 @@
-package coo.project.objects;
+package coo.project.core;
 
 // match resolution strategy, how to
 public abstract class Match {

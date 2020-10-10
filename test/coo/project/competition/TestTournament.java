@@ -1,4 +1,4 @@
-package coo.project.objects;
+package coo.project.competition;
 
 import java.util.ArrayList;
 
@@ -7,10 +7,10 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import coo.project.objects.Competition;
-import coo.project.objects.Competitor;
-import coo.project.objects.competition.Tournament;
-import coo.project.objects.match.CertainWinnerMatch;
+import coo.project.competition.Tournament;
+import coo.project.core.Competition;
+import coo.project.core.Competitor;
+import coo.project.match.CertainWinnerMatch;
 
 class TestTournament {
 	
