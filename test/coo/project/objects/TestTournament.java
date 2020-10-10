@@ -1,4 +1,4 @@
-package coo.project.tests;
+package coo.project.objects;
 
 import java.util.ArrayList;
 

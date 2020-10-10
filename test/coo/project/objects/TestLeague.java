@@ -1,4 +1,4 @@
-package coo.project.tests;
+package coo.project.objects;
 
 import org.junit.After;
 import org.junit.Assert;

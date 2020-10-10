@@ -1,4 +1,4 @@
-package coo.project.tests;
+package coo.project.objects;
 
 import org.junit.Assert;
 import org.junit.jupiter.api.BeforeEach;
