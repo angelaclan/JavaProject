@@ -1,4 +1,7 @@
-package coo.project.objects;
+package coo.project.objects.match;
+
+import coo.project.objects.Competitor;
+import coo.project.objects.Match;
 
 public class CertainWinnerMatch extends Match{
 	

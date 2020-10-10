@@ -4,11 +4,10 @@ import org.junit.Assert;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import coo.project.objects.CertainWinnerMatch;
 import coo.project.objects.Competitor;
 import coo.project.objects.Match;
-import coo.project.objects.RandomWinnerMatch;
-// setup -> test -> teardown
+import coo.project.objects.match.CertainWinnerMatch;
+import coo.project.objects.match.RandomWinnerMatch;
 
 class TestCompetitorTrackPoints {
 	CertainWinnerMatch match1 ;

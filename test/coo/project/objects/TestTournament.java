@@ -7,10 +7,10 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import coo.project.objects.CertainWinnerMatch;
 import coo.project.objects.Competition;
 import coo.project.objects.Competitor;
-import coo.project.objects.Tournament;
+import coo.project.objects.competition.Tournament;
+import coo.project.objects.match.CertainWinnerMatch;
 
 class TestTournament {
 	

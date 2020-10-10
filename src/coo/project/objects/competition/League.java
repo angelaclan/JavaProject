@@ -1,8 +1,12 @@
-package coo.project.objects;
+package coo.project.objects.competition;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+
+import coo.project.objects.Competition;
+import coo.project.objects.Competitor;
+import coo.project.objects.Match;
 
 public class League extends Competition {
 

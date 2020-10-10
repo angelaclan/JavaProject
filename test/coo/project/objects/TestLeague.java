@@ -5,11 +5,11 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import coo.project.objects.CertainWinnerMatch;
 import coo.project.objects.Competition;
 import coo.project.objects.Competitor;
-import coo.project.objects.League;
-import coo.project.objects.RandomWinnerMatch;
+import coo.project.objects.competition.League;
+import coo.project.objects.match.CertainWinnerMatch;
+import coo.project.objects.match.RandomWinnerMatch;
 
 public class TestLeague {
 

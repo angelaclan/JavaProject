@@ -1,5 +1,7 @@
 package coo.project.objects;
 
+import coo.project.objects.build.CompetitionBuilder;
+
 public class MainCompetition {
 	public static void main(String[] args) {
 		

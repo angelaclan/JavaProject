@@ -1,5 +1,8 @@
-package coo.project.objects;
+package coo.project.objects.match;
 import java.util.*;
+
+import coo.project.objects.Competitor;
+import coo.project.objects.Match;
 
 
 public class RandomWinnerMatch extends Match {

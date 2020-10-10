@@ -1,7 +1,14 @@
-package coo.project.objects;
+package coo.project.objects.build;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+
+import coo.project.objects.Competition;
+import coo.project.objects.Competitor;
+import coo.project.objects.Match;
+import coo.project.objects.competition.League;
+import coo.project.objects.competition.Tournament;
+import coo.project.objects.match.RandomWinnerMatch;
 
 public class CompetitionBuilder {
 	protected Competition competition;
