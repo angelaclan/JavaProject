@@ -17,7 +17,7 @@ abstract public class Competition {
 // Methods
 
 	/**
-	 * @param a adds the given competitor to the competition
+	 * @param adds the given competitor to the competition
 	 */
 	public void addCompetitor(Competitor a) {
 		competitors.add(a);
@@ -49,7 +49,10 @@ abstract public class Competition {
 	}
 
 	abstract protected Competitor play(ArrayList<Competitor> competitors);
-
+	
+	/**
+	 * @param set match strategy
+	 */
 	public void setMatch(MatchResolutionStrategy match) {
 		this.match = match;
 	}

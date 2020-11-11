@@ -6,7 +6,12 @@ import org.junit.jupiter.api.Test;
 import coo.project.build.CompetitionBuilder;
 import coo.project.core.Competitor;
 import coo.project.match.CertainWinnerMatch;
-
+/**
+ * 
+ * @author Chia-Ling Bragagnolo
+ * Tests that in a master competition, it is able to group players, pick second round players and eventually generates a winner.
+ * 
+ */
 class TestMaster {
 
 	Master master2021;

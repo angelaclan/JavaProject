@@ -31,7 +31,7 @@ public class CompetitionBuilder {
 		match = new RandomWinnerMatch();
 	}
 	/**
-	 * @return CompetitionBuilder Sets League as target competition.
+	 * @return CompetitionBuilder sets League as target competition.
 	 */
 	public CompetitionBuilder forLeague() {
 		competition = new League(match);
@@ -39,7 +39,7 @@ public class CompetitionBuilder {
 	}
 
 	/**
-	 * @return CompetitionBuilder Sets Tournament as target competition.
+	 * @return CompetitionBuilder sets Tournament as target competition.
 	 */
 	public CompetitionBuilder forTournament() {
 		competition = new Tournament(match);
@@ -47,23 +47,38 @@ public class CompetitionBuilder {
 	}
 
 	/**
-	 * @return CompetitionBuilder Sets Master as target competition.
+	 * 
+	 * @param playerPerLeague
+	 * @param strategy
+	 * @return CompetitionBuilder sets Master as target competition.
 	 */
 	public CompetitionBuilder forMaster(int playerPerLeague, Function<League, List<Competitor>> strategy) {
 		competition = new Master(match, playerPerLeague, strategy);
 		return this;
 	}
-
+	/**
+	 * 
+	 * @param playerPerLeague
+	 * @return Convenient method for creating a master with pick winner strategy.
+	 */
 	public CompetitionBuilder forPickingWinnersMaster(int playerPerLeague) {
 		this.forMaster(playerPerLeague, Master.pickWinners());
 		return this;
 	}
-
+	/**
+	 * 
+	 * @param playerPerLeague
+	 * @return Convenient method for creating a master with pick loser strategy.
+	 */
 	public CompetitionBuilder forPickingLoosersMaster(int playerPerLeague) {
 		this.forMaster(playerPerLeague, Master.pickLosers());
 		return this;
 	}
-
+	/**
+	 * 
+	 * @param playerPerLeague
+	 * @return Convenient method for creating a master with pick winner and loser strategy.
+	 */
 	public CompetitionBuilder forPickingWinnersAndLoosersMaster(int playerPerLeague) {
 		this.forMaster(playerPerLeague, Master.pickWinnersAndLosers());
 		return this;
@@ -72,10 +87,10 @@ public class CompetitionBuilder {
 
 	/**
 	 * @param name
-	 * @return CompetitionBuilder Adds a single competitor named as given.
+	 * @return CompetitionBuilder adds a single competitor named as given.
 	 */
 	public CompetitionBuilder addParticipant(String name) {
-		Competitor c = new Competitor();
+		Competitor c = new Competitor(name);
 		c.setName(name);
 		competition.addCompetitor(c);
 		return this;
@@ -83,7 +98,7 @@ public class CompetitionBuilder {
 
 	/**
 	 * @param n
-	 * @return CompetitionBuilder Adds a given amount of competitors. Names are
+	 * @return CompetitionBuilder adds a given amount of competitors. Names are
 	 *         chosen from a name pool.
 	 */
 	public CompetitionBuilder addManyParticipants(int n) {
@@ -101,7 +116,11 @@ public class CompetitionBuilder {
 	public Competition build() {
 		return competition;
 	}
-
+	/**
+	 * 
+	 * @param match
+	 * @return CompetitionBuilder sets MatchResolutionStrategy.
+	 */
 	public CompetitionBuilder useMatch(MatchResolutionStrategy match) {
 		this.match = match;
 		if (this.competition != null) {
@@ -109,7 +128,11 @@ public class CompetitionBuilder {
 		}
 		return this;
 	}
-
+	/**
+	 * 
+	 * @param competitors
+	 * @return CompetitionBuilder add competitors to tournament competition.
+	 */
 	public CompetitionBuilder addAllCompetitors(List<Competitor> competitors) {
 		for (Competitor competitor : competitors) {
 			this.competition.addCompetitor(competitor);

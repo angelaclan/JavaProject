@@ -6,6 +6,12 @@ public class Competitor {
 
 	private String name;
 	private Integer point = 0;
+	
+// Constructor
+	public Competitor (String name) {
+		this.name = name;
+	}
+	
 
 // Methods
 	/**

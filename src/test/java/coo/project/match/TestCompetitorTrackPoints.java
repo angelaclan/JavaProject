@@ -21,8 +21,8 @@ class TestCompetitorTrackPoints {
 	
 	@BeforeEach
 	public void setUp() throws Exception {
-		a = new Competitor();
-		b = new Competitor();
+		a = new Competitor("Julia");
+		b = new Competitor("Rachel");
 		match1 = new CertainWinnerMatch();
 		match2 = new CertainWinnerMatch();
 		match1.play(a, b);

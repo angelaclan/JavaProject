@@ -4,10 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
-import java.util.function.BiFunction;
 import java.util.function.Function;
-import java.util.stream.Stream;
-
 import coo.project.build.CompetitionBuilder;
 import coo.project.core.Competition;
 import coo.project.core.Competitor;
@@ -38,6 +35,11 @@ public class Master extends Competition {
 	}
 
 //Method
+	
+	/**
+	 * 
+	 * @param strategy
+	 */
 	public void setStrategy(Function<League, List<Competitor>> strategy) {
 		this.strategy = strategy;
 	}
@@ -46,14 +48,17 @@ public class Master extends Competition {
 	protected Competitor play(ArrayList<Competitor> competitors) {
 		ArrayList<League> leagues = this.calculateLeagues();
 		CompetitionBuilder builder = new CompetitionBuilder();
+		Tournament tournament; 
 		builder.forTournament().useMatch(match);
 		for (League league : leagues) {
 			league.play();
 			builder.addAllCompetitors(strategy.apply(league));
 		}
-		return builder.build().play();
+		tournament = (Tournament)builder.build();
+		return tournament.play();
 	}
 
+	
 	protected ArrayList<League> calculateLeagues() {
 		return this.calculateLeagues(competitors);
 
@@ -75,14 +80,25 @@ public class Master extends Competition {
 		}
 		return leagues;
 	}
+	
+	/**
+	 * 
+	 * @return Strategy that picks the winner of each team 
+	 */
 	static public Function<League, List<Competitor>> pickWinners() {
 		return (League l) -> Arrays.asList(l.ranking().get(0));
 	}
-
+	/**
+	 * 
+	 * @return Strategy that picks the loser of each team 
+	 */
 	static public Function<League, List<Competitor>> pickLosers() {
 		return (League l) -> Arrays.asList(l.ranking().get(l.ranking().size() - 1));
 	}
-
+	/**
+	 * 
+	 * @return Strategy that picks the winner and the loser of each team 
+	 */
 	static public Function<League, List<Competitor>> pickWinnersAndLosers() {
 		return (League l) -> Arrays.asList(l.ranking().get(0), l.ranking().get(l.ranking().size() - 1));
 	}

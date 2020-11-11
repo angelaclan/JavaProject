@@ -26,9 +26,9 @@ public class TestLeague {
 	@BeforeEach
 	public void setUp() throws Exception {
 		league2019 = new League(new CertainWinnerMatch());
-		a = new Competitor();
-		b = new Competitor();
-		c = new Competitor();
+		a = new Competitor("Anne");
+		b = new Competitor("Emilie");
+		c = new Competitor("Lilia");
 		league2019.addCompetitor(a);
 		league2019.addCompetitor(b);
 		league2019.addCompetitor(c);

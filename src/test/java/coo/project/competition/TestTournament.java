@@ -28,10 +28,10 @@ class TestTournament {
 		
 		tournament2020 = new Tournament(new CertainWinnerMatch() );
 		
-		a = new Competitor();
-		b = new Competitor();
-		c = new Competitor();
-		d = new Competitor();
+		a = new Competitor("Toto");
+		b = new Competitor("Tutu");
+		c = new Competitor("Tata");
+		d = new Competitor("Titi");
 		tournament2020.addCompetitor(a);
 		tournament2020.addCompetitor(b);
 		tournament2020.addCompetitor(c);
