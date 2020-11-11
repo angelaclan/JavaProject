@@ -3,7 +3,7 @@ package coo.project.match;
 import java.util.*;
 
 import coo.project.core.Competitor;
-import coo.project.core.Match;
+import coo.project.core.MatchResolutionStrategy;
 
 /**
  * 
@@ -12,7 +12,7 @@ import coo.project.core.Match;
  * RandomWinnerMatch scores and select winner based on random probability, 
  * which means each competitor has 0.5 probability to win the match
  */
-public class RandomWinnerMatch extends Match {
+public class RandomWinnerMatch extends MatchResolutionStrategy {
 
 //	Methods
 	

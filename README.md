@@ -46,5 +46,7 @@ For adding javadoc generation capability I added the plugin maven-javadoc-plugin
 
 
     
-
+**to correct:
+1. Le constructor ne prend pas de Match en argument mais une liste de competiteurs.
+2. Pas de méthode Play (competitors 1 et 2) - indiquée dans l’énoncé.
    

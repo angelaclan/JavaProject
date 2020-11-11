@@ -4,8 +4,8 @@ package coo.project.core;
  * @author Chia-Ling Bragagnolo
  * Match subclass is match resolution strategy, meaning that they are in charge of choosing a winner and scoring.
  */
-
-public abstract class Match {
+ 
+public abstract class MatchResolutionStrategy {
 
 	
 //	Methods

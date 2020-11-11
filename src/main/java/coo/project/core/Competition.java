@@ -3,41 +3,37 @@ package coo.project.core;
 import java.util.ArrayList;
 
 abstract public class Competition {
+
 // Attribute
-
-	protected Match match;
+	protected MatchResolutionStrategy match;
 	protected ArrayList<Competitor> competitors = new ArrayList<>();
-
 	protected Boolean hasBeenPlayed = false;
 
-// Constructor
-	public Competition(Match match) {
+	// Constructor
+	public Competition(MatchResolutionStrategy match) {
 		this.match = match;
 	}
 
 // Methods
 
 	/**
-	 * 
-	 * @param a
-	 * adds the given competitor to the competition
+	 * @param a adds the given competitor to the competition
 	 */
 	public void addCompetitor(Competitor a) {
 		competitors.add(a);
 	}
-	
+
 	/**
-	 * 
-	 * @return the winner of the competition
-	 * template method that relies on play(competitors) defined by sub-classes
+	 * @return the winner of the competition template method that relies on
+	 *         play(competitors) defined by sub-classes
 	 * 
 	 */
 	public Competitor play() {
 		hasBeenPlayed = true;
 		return this.play(competitors);
 	}
+
 	/**
-	 * 
 	 * @return a list of competitors ordered by their gained points
 	 * 
 	 */
@@ -53,5 +49,9 @@ abstract public class Competition {
 	}
 
 	abstract protected Competitor play(ArrayList<Competitor> competitors);
+
+	public void setMatch(MatchResolutionStrategy match) {
+		this.match = match;
+	}
 
 }

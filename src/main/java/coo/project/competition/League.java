@@ -4,18 +4,17 @@ import java.util.ArrayList;
 
 import coo.project.core.Competition;
 import coo.project.core.Competitor;
-import coo.project.core.Match;
+import coo.project.core.MatchResolutionStrategy;
 
 /**
- * 
- * @author Chia-Ling Bragagnolo
- * 
- *         League resolve its winner by having all the competitors playing
- *         against all the competitors.
+ * @author Chia-Ling Bragagnolo 
+ * League resolve its winner by having all the competitors playing against all the competitors.
  */
+
 public class League extends Competition {
 
-	public League(Match match) {
+// Constructor
+	public League(MatchResolutionStrategy match) {
 		super(match);
 	}
 

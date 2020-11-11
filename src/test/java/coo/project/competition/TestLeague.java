@@ -7,12 +7,14 @@ import org.junit.jupiter.api.Test;
 import coo.project.core.Competition;
 import coo.project.core.Competitor;
 import coo.project.match.CertainWinnerMatch;
+
 /**
  * 
- * @author Chia-Ling Bragagnolo
- * Tests that each competitor accumulates certain amount of points after playing the matches.
- * In this test case we create a special class : CertainWinnerMatch() for test purpose which the result can be predicted.
- *  
+ * @author Chia-Ling Bragagnolo Tests that each competitor accumulates certain
+ *         amount of points after playing the matches. In this test case we
+ *         create a special class : CertainWinnerMatch() for test purpose which
+ *         the result can be predicted.
+ * 
  */
 public class TestLeague {
 
@@ -20,7 +22,7 @@ public class TestLeague {
 	Competitor a;
 	Competitor b;
 	Competitor c;
-	
+
 	@BeforeEach
 	public void setUp() throws Exception {
 		league2019 = new League(new CertainWinnerMatch());
