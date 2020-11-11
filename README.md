@@ -1,7 +1,7 @@
 # COO Project
 ## About
      This project solves the exercise proposed in class COO. 
-     Full text is available [here](https://www.fil.univ-lille1.fr/~quinton/coo/projet/competitions.pdf).
+     Full text is available [here](https://www.fil.univ-lille1.fr/~quinton/coo/projet/competitionsV2.pdf).
 
 ## Obtain code
 From a terminal type: 
